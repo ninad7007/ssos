@@ -2,6 +2,9 @@
 #include<stdio.h>
 #include<stdlib.h>
 int result;
+//<STACKOVERFLOW>
+int yylex();
+//</STACKOVERFLOW>
 %}
 %token N
 %left '+' '-'

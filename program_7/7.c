@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<stdlib.h>
 struct proc {
     int id;
     int arrival;
@@ -15,7 +16,7 @@ int chkprocess(int);
 int nextprocess();
 void roundrobin(int, int, int[], int[]);
 void srtf(int);
-main() {
+int main() {
     int n,tq,choice;
     int bt[10],st[10],i,j,k;
     for(; ;){
@@ -114,7 +115,7 @@ void roundrobin(int n,int tq,int st[],int bt[]) {
     } // end of nextprocess
 void srtf(int n) {
     int i,j,k,time=0;
-    float tavg,wavg;
+    float tavg=0,wavg=0;
     for(i = 1; i <= n; i++)
     {
     process[i].id = i;
