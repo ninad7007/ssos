@@ -1,5 +1,5 @@
 %{
-#include<stdio.h>yyl
+#include<stdio.h>
 int comment, state;
 %}
 %%
@@ -12,7 +12,7 @@ int comment, state;
     if(state == 0) {
         fprintf(yyout, "%s", yytext);
     }
-}x
+}
 %%
 int main() {
     char infile[20], outfile[20];
